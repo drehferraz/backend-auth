@@ -11,10 +11,11 @@ app.use(cors());
 const SECRET_KEY = "seuSegredoSuperSeguro";
 
 // Conectar ao MongoDB (use seu banco de dados real aqui)
-mongoose.connect("mongodb://localhost:27017/authDB", {
+mongoose.connect("mongodb+srv://admin:mongodb+srv://admin:Angelic@2304@cluster0.pbkfw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0.mongodb.net/authDB", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
+
 
 // Criar um modelo de usuário
 const UserSchema = new mongoose.Schema({
